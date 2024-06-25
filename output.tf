@@ -3,7 +3,7 @@ output "k10_bucket_name" {
   value = google_storage_bucket.repository.id
 }
 
-output "kubernetes_cluster_name" {
+output "cluster_name" {
   value = module.gke.name
 }
 

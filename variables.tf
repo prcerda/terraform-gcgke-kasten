@@ -30,6 +30,10 @@ variable "cluster_name" {
   type = string
 }
 
+variable "machine_type" {
+  type = string
+}
+
 variable "tokenexpirehours" {
   type = number
   default = 36

@@ -80,7 +80,7 @@ module "gke" {
   node_pools = [
     {
       name                        = "pool-01-${var.cluster_name}"
-      machine_type                = "e2-standard-2"
+      machine_type                = var.machine_type
       node_locations              = var.az[0]
       autoscaling                 = true
       initial_node_count          = var.gke_num_nodes
